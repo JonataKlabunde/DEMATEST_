@@ -4,30 +4,40 @@ CRUD angular + spring boot + aws
 
 
 # DADOS PARA CONEXÃO COM O BANCO DE DADOS
+<p>
 Hostname: aws-server.cint2txpkxro.us-east-2.rds.amazonaws.com
-Port: 3306
-database: db_dematest
-Username:  admin
-Password: Des852951
+Port: 3306<br />
+database: db_dematest<br />
+Username:  admin<br />
+Password: Des852951<br />
+</p>
 
-
-# DADOS DO SPING BOOT
-endereço configurado ( http://localhost:8080 )
-Pasta "dematest" é a localização do projeto do 'Spring boot'
-
+# DADOS DO SPRING BOOT
+<p>
+endereço configurado ( http://localhost:8080 )<br />
+Pasta "dematest" é a localização do projeto do 'Spring boot'<br />
+<a href="https://github.com/JonataKlabunde/DEMATEST_/tree/main/dematest">Link para o projeto spring boot</a>
+</p>
 
 # DADOS DO ANGULAR
-Pasta "dematest-angular" é a localização do projeto do 'Angular +2'
-endereço configurado ( http://localhost:4200 )
-    * através do prompt de comando execute "ng serve" para rodar a aplicação
-
+<p>
+Pasta "dematest-angular" é a localização do projeto 'Angular +2'<br />
+endereço configurado ( http://localhost:4200 )<br />
+    * através do prompt de comando execute "ng serve" para rodar a aplicação<br />
+<a href="https://github.com/JonataKlabunde/DEMATEST_/tree/main/dematest-angular">Link para o projeto angular</a>
+</p>
 
 # DADOS DA APLICAÇÃO
-(ja cadastrados)
-login: jonata
-senha: 123
-
+<p>
+(ja cadastrados)<br />
+login: jonata<br />
+senha: 123<br />
+</p>
 
 # CONTATO
-JONATA KLABUNDE
+JONATA KLABUNDE<br />
 (47) 99127-9291
+
+
+
+

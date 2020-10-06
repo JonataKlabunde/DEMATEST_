@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-primary">
+
+                <input               
+                    type="text"
+                    class="form-control"
+                    id="input-cliente"                   
+                    placeholder="Pesquisa" />
+
+                <p class="mt-4" id="clientesTotalizador"  *ngIf="clientes$ | async as clientes;" >TOTAL DE CLIENTES: {{(clientes$| async)?.length}} </p>
+
+                <table class="table table-striped" *ngIf="clientes$ | async as clientes; else loading">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Cliente</th>
+                            <th scope="col">Telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let cliente of clientes">
+                            <th scope="row">{{ cliente.id }}</th>
+                            <td>{{ cliente.nome }}</td>
+                            <td>{{ cliente.telefone }}</td>
+                            <button class="ml-2 btn-detalhes" (click)="detalhes(cliente.id)" >detalhes</button>
+                            <button class="ml-2 btn-deletar" (click)="deletar(cliente.id)" >deletar</button>
+                        </tr>
+                    </tbody>
+                </table>
+                <ng-template #loading>
+                    <span style="color: white;">Carregando Clientes...</span>
+                </ng-template>
+            </div>            
+        </div>
+    </div>
+  </div>

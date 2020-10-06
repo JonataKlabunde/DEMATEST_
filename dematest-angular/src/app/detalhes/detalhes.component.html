@@ -1,0 +1,78 @@
+
+<h4 class="text-center mt-4" style="color: white">Detalhes</h4>
+
+<form [formGroup]="detalhesForm" class="form mt-4" (submit)="valida()" >
+
+    <!-- nome -->
+    <div class="form-group">
+        <input            
+            formControlName="nome"
+            class="form-control" 
+            placeholder="Nome" 
+            autofocus>
+        <small
+            *ngIf="detalhesForm.get('nome').errors?.required"
+            class="text-danger d-block mt-2" >            
+            Nome é obrigatório!
+        </small>
+    </div>    
+    <!-- cpf -->
+    <div class="form-group">
+        <input            
+            formControlName="cpf"
+            class="form-control" 
+            placeholder="CPF" 
+            autofocus>
+        <small
+            *ngIf="detalhesForm.get('cpf').errors?.required"
+            class="text-danger d-block mt-2" >            
+            CPF é obrigatório!
+        </small>
+    </div>
+    <!-- telefone -->
+    <div class="form-group">
+        <input            
+            formControlName="telefone"
+            class="form-control" 
+            placeholder="Telefone" 
+            autofocus>
+        <small
+            *ngIf="detalhesForm.get('telefone').errors?.required"
+            class="text-danger d-block mt-2" >            
+            Telefone é obrigatório!
+        </small>
+    </div>    
+    <!-- observacao -->
+    <div class="form-group">
+        <input            
+            formControlName="observacao"
+            class="form-control" 
+            placeholder="Observação" 
+            autofocus>
+        <small
+            *ngIf="detalhesForm.get('observacao').errors?.required"
+            class="text-danger d-block mt-2" >            
+            Observação é obrigatória!
+        </small>
+    </div>
+    <!-- endereco -->
+    <div class="form-group">
+        <input            
+            formControlName="endereco"
+            class="form-control" 
+            placeholder="Endereço" 
+            autofocus>
+        <small
+            *ngIf="detalhesForm.get('endereco').errors?.required"
+            class="text-danger d-block mt-2" >            
+            Endereço é obrigatória!
+        </small>
+    </div>
+
+    <button 
+        type="submit" 
+        class="btn btn-primary btn-block">
+        SALVAR
+    </button>
+
+</form>

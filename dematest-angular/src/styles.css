@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+/* Fonts */
+@font-face {
+    font-family: Pixel;
+    src: url(assets/fonts/Pixel12x10.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Awesome;
+    src: url();
+}
+* {
+    font-family: Roboto;
+}
+
+body {
+    background: rgb(112,10,208);
+    background: linear-gradient(90deg, rgba(112,10,208,1) 1%, rgba(151,146,227,1) 100%);
+}
+
+

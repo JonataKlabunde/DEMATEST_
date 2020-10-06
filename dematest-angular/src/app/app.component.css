@@ -1,0 +1,43 @@
+
+.cor-roxo {
+    background-color: #700ad0 !important;    
+}
+.cor-roxo-claro {
+    background-color: #9792E3 !important;
+}
+.cor-verde {
+    background-color: #61E786 !important;
+}
+.navbar-brand, .navbar-brand:hover {
+    font-family: Pixel;
+    color: white;
+}
+.nav-link, #button-pesquisar {
+    color: white !important;
+}
+.nav-link.active {
+    color: #61E786 !important;
+}
+
+#section-table {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.table {  
+    border: 1px solid #fff;
+    color: #fff;
+}
+#pesquisa {
+    margin: 7% 0 2% 0 !important;
+}
+
+.table-icon {
+    color: #61E786;
+    font-size: x-large;
+    margin: 0 10px;    
+}
+.table-delete {
+    color: #700ad0;
+    font-size: x-large;
+    margin: 0 10px;    
+}

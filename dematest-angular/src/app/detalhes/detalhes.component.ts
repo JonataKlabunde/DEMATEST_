@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Cliente } from '../cliente/Cliente';
-import {  Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CadastraService } from '../cadastra/cadastra.service';
+import { ClientesService } from '../cliente/clientes.service';
+import { Observable } from 'rxjs';
+import { LogicalFileSystem } from '@angular/compiler-cli/src/ngtsc/file_system';
 
 @Component({
   selector: 'app-cadastra',
@@ -12,6 +15,7 @@ import { CadastraService } from '../cadastra/cadastra.service';
 export class DetalhesComponent implements OnInit {
 
   detalhesForm: FormGroup;
+  private clienteId: number;
 
   constructor(
       private formBuilder: FormBuilder,
@@ -80,6 +84,8 @@ export class DetalhesComponent implements OnInit {
         .subscribe(
             () => { this.router.navigate(['/clientes'])},
             err => console.log(err)
-        )    
+        )
+    
   }
+
 }

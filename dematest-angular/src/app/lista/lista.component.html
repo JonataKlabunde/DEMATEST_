@@ -2,15 +2,16 @@
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-primary">
-
-                <input               
+                <input
+                    formControl="filter" 
+                    (input)="onChange($event)"
                     type="text"
                     class="form-control"
                     id="input-cliente"                   
                     placeholder="Pesquisa" />
 
                 <p class="mt-4" id="clientesTotalizador"  *ngIf="clientes$ | async as clientes;" >TOTAL DE CLIENTES: {{(clientes$| async)?.length}} </p>
-
+                
                 <table class="table table-striped" *ngIf="clientes$ | async as clientes; else loading">
                     <thead>
                         <tr>

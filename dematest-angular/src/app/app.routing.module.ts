@@ -8,7 +8,6 @@ import { ListaComponent } from './lista/lista.component';
 
 const routes: Routes = [
   // { path: '', pathMatch: 'full', redirectTo: '' },
-
   { path: '', component: SigninComponent },
   { path: 'clientes', component: ListaComponent },
   { path: 'cadastrar', component: CadastraComponent },

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API: 'http://localhost:8080/',
+  API: 'http://3.134.79.6:8080/dematest/',
   LOGGED: false
 };
 

@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  API: 'DEMATEST_/',
+  API: 'http://3.134.79.6:8080/dematest/',
   LOGGED: false
 };

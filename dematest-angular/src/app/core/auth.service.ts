@@ -10,11 +10,11 @@ import { Usuario } from '../usuario/usuario';
 })
 export class AuthService {
 
-  private readonly API = `${environment.API}usuarios`;
+  // private readonly API = `${environment.API}usuarios`;
   
   constructor(private http: HttpClient) { }
 
   authenticate() {
-    return this.http.get<Usuario[]>(this.API);
+    return this.http.get<Usuario[]>("http://3.134.79.6:8080/dematest/usuarios");
   }
 }

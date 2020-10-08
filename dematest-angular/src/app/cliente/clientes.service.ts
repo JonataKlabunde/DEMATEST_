@@ -10,15 +10,16 @@ import { environment } from 'src/environments/environment';
 export class ClientesService {
 
   
-  private readonly API = `${environment.API}/clientes`;
+  // private readonly API = `${environment.API}/clientes`;
 
   constructor(private http: HttpClient) { }
     
   list() {
-    return this.http.get<Cliente[]>(this.API)
+    return this.http.get<Cliente[]>("http://3.134.79.6:8080/dematest/clientes")
   }
 
   deletar(id: number) {    
-    return this.http.delete(`${environment.API}/clientes/${id}`)
+    // return this.http.delete(`${environment.API}/clientes/${id}`)
+    return this.http.delete(`http://3.134.79.6:8080/dematest/clientes/${id}`)
   }
 }

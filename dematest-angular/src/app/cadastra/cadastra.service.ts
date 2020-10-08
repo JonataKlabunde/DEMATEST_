@@ -20,11 +20,11 @@ export class CadastraService {
 
   cadastrar(novoCliente: Cliente){
     novoCliente.usuario = '1' // TODO: "Usuário sendo cadastrado fixo como 1";
-    return this.http.post(this.API, novoCliente);
+    return this.http.post("http://3.134.79.6:8080/dematest/clientes", novoCliente);
   }
 
   atualizar(clienteAtualizado: Cliente) {
-    return this.http.put(`${environment.API}clientes/${this.clienteDetalhesId}`, clienteAtualizado)
+    return this.http.put(`http://3.134.79.6:8080/dematest/clientes/${this.clienteDetalhesId}`, clienteAtualizado)
   }
 
   showDetalhes(id: number) {
@@ -33,6 +33,6 @@ export class CadastraService {
   }
 
   busca(){
-    return this.http.get<Cliente>(`${environment.API}/clientes/${this.clienteDetalhesId}`)
+    return this.http.get<Cliente>(`http://3.134.79.6:8080/dematest/clientes/${this.clienteDetalhesId}`)
   }
 }
